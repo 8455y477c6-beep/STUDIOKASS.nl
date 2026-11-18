@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KASS STUDIO | Photography</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f4ef;
+    color: #59483f;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: #fffaf6;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #b98291;
+}
+
+nav a {
+    text-decoration: none;
+    color: #59483f;
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: #eadbd3;
+}
+
+.hero p {
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(50px, 9vw, 100px);
+    color: #fffaf6;
+    letter-spacing: 5px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #a56d7e;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #bd8795;
+    color: white;
+    padding: 14px 35px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+section {
+    padding: 90px 9%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #ad7887;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #947d72;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+.about {
+    background: #eadbd3;
+    line-height: 2;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+}
+
+.price {
+    background: #fffaf6;
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #e6c8cd;
+}
+
+.price h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #bd8795;
+}
+
+.price strong {
+    font-size: 40px;
+}
+
+form {
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 6px;
+    font-size: 13px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e4c9c8;
+    background: #fffaf6;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+footer {
+    background: #eadbd3;
+    padding: 40px;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer a {
+    color: #ad7887;
+    text-decoration: none;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">KASS STUDIO</div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#about">ABOUT</a>
+        <a href="#booking">BOOKING</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <p>WELCOME TO MY CREATIVE WORLD</p>
+    <h1>KASS STUDIO</h1>
+    <h2>Capturing moments, creating memories.</h2>
+    <a href="#portfolio" class="btn">DISCOVER MY WORK</a>
+</div>
+
+<section id="portfolio">
+    <h2 class="section-title">My Portfolio</h2>
+    <p class="subtitle">A collection of moments captured through my lens.</p>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" alt="Portrait photography">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600" alt="Portrait">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600" alt="Photography">
+        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600" alt="Portrait photography">
+    </div>
+
+    <p style="margin-top:30px;font-size:12px;">
+        Replace these example photos with your own photography.
+    </p>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        Hi! Welcome to KASS STUDIO.
+        I am a beginner photographer with a passion
+        for capturing beautiful moments and creating
+        memories that last forever.
+
+        Every picture tells a story, and I would love
+        to capture yours!
+    </p>
+
+    <a class="btn" href="https://www.tiktok.com/@framesbykass" target="_blank">
+        FOLLOW MY TIKTOK
+    </a>
+</section>
+
+<section id="booking">
+    <h2 class="section-title">Book a Photoshoot</h2>
+    <p class="subtitle">Let's capture something beautiful together.</p>
+
+    <div class="price">
+        <h3>Photography Session</h3>
+        <strong>€20</strong>
+        <p>per hour</p>
+    </div>
+
+    <br><br>
+
+    <form action="https://formsubmit.co/kassandra.vander@gmail.com" method="POST">
+
+        <input type="hidden" name="_subject" value="New KASS STUDIO Booking!">
+
+        <label>Your full name</label>
+        <input type="text" name="Name" placeholder="Your name" required>
+
+        <label>Email address</label>
+        <input type="email" name="Email" placeholder="Your email" required>
+
+        <label>Phone number</label>
+        <input type="tel" name="Phone" placeholder="Your phone number" required>
+
+        <label>Preferred date</label>
+        <input type="date" name="Date" required>
+
+        <label>Preferred time</label>
+        <input type="time" name="Time" required>
+
+        <label>How many hours?</label>
+        <select name="Hours" required>
+            <option value="">Choose hours</option>
+            <option>1 hour - €20</option>
+            <option>2 hours - €40</option>
+            <option>3 hours - €60</option>
+            <option>4 hours - €80</option>
+        </select>
+
+        <label>Tell me about your photoshoot</label>
+        <textarea name="Message" placeholder="What kind of photoshoot would you like?"></textarea>
+
+        <button class="btn" type="submit">
+            SEND BOOKING REQUEST
+        </button>
+
+    </form>
+</section>
+
+<footer>
+    <h2 class="logo">KASS STUDIO</h2>
+    <p>Capturing moments, creating memories.</p>
+    <br>
+    <a href="https://www.tiktok.com/@framesbykass" target="_blank">
+        TikTok: @framesbykass
+    </a>
+    <p style="margin-top:20px;">© 2026 KASS STUDIO. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+KASS-STUDIO/
+│
+├── index.html
+├── style.css
+│
+└── images/
+    ├── DSC_0030.jpg
+    ├── DSC_0033.jpg
+    ├── DSC_0035(1).jpg
+    └── DSC_0038.jpg
